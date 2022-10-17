@@ -25,4 +25,6 @@ def client_function(host: str, port: int):
         print('\nEnvio do arquivo concluído!')
 
 
-client_function('localhost', 30000)
+def run():
+    """Executes the code"""
+    client_function('localhost', 30000)

@@ -14,7 +14,7 @@ def server_process():
 
     print(f'Nome do arquivo: {file_name}')
 
-    with open(f'uploads/{file_name}', 'wb') as file:
+    with open(f'server/uploads/{file_name}', 'wb') as file:
         while True:
             received_bytes = socket_connection.recv(4096)
             if not received_bytes:
@@ -30,5 +30,8 @@ server.bind(('localhost', 30000))
 server.listen(5)
 print('Servidor rodando...')
 
-while True:
-    server_process()
+
+def run():
+    """Executes the code"""
+    while True:
+        server_process()

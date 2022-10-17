@@ -1,4 +1,4 @@
 .idea
 
-*/uploads/*
-!*/uploads/teste.jpg
+uploads
+!uploads/teste.jpg
